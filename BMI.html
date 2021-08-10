@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>BMI Calculator</title>
+<style>
+ body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg,#0099CC,#2bdf9a);
+    min-height: 100vh;
+}
+div{
+    width: 400px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow:1px 1px 20px black;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.text{
+    text-align: left;
+    margin-left: 150px;
+}
+#w,#h{
+    color: cadetblue;
+    text-align: left;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid sienna;
+
+}
+
+#btn{
+    font-family: inherit;
+    margin-top: 10px;
+    border: none;
+    color: snow;
+    background-image: linear-gradient(120deg,#0099CC,#2bdf9a);
+    width: 160px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background: snow;
+}
+#info{
+    font-size: 15px;
+    font-family: inherit;
+    
+}
+img{
+    border-radius: 20px;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+    <div>
+        <h2>BMI Calculator</h2>
+        <p class="text">Height(cm)</p>
+        <input type="text" id="h">
+        <p class="text">Weight(Kg)</p>
+        <input type="text" id="w">
+        <p id="result"></p> 
+        <button id="btn" onclick="BMI()">Calculate</button>
+        <p id="Info">Please Enter your Height and Weight</p>
+    </div>
+    <section>
+        <img src="images/bmi.jpg"  width="700" height="400" >
+    </section>
+
+    
+    <script src="apps.js"></script>
+</body>
+</html>
